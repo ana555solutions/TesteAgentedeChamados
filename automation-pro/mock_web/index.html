@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Central de Chamados</title>
+</head>
+
+<body>
+
+    <h1>Central de Chamados</h1>
+
+    <form id="ticket-form">
+
+        <label for="ticket_id">
+            Número do chamado:
+        </label>
+
+        <input
+            id="ticket_id"
+            name="ticket_id"
+            type="text"
+            required
+        >
+
+        <br><br>
+
+        <label for="priority">
+            Nova prioridade:
+        </label>
+
+        <select
+            id="priority"
+            name="priority"
+            required
+        >
+            <option value="">Selecione</option>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+            <option value="critica">Crítica</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Atualizar chamado
+        </button>
+
+    </form>
+
+    <br>
+
+    <div id="result"></div>
+
+    <script>
+        document
+            .getElementById("ticket-form")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const ticketId =
+                    document.getElementById("ticket_id").value;
+
+                const priority =
+                    document.getElementById("priority").value;
+
+                document.getElementById("result").innerText =
+                    `Chamado ${ticketId} atualizado para prioridade ${priority}.`;
+            });
+    </script>
+
+</body>
+</html>

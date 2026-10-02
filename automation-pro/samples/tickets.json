@@ -1,0 +1,83 @@
+[
+  {
+    "nome": "01_web_sucesso",
+    "descricao": "Atualize o chamado CH-123 para prioridade alta.",
+    "categoria": "atualizacao",
+    "prioridade": "alta",
+    "area_solicitante": "Suporte",
+    "esperado": "automacao -> RPA Web -> concluido"
+  },
+  {
+    "nome": "02_desktop_sucesso",
+    "descricao": "Calcule 10 + 5 na Calculadora.",
+    "categoria": "consulta",
+    "prioridade": "baixa",
+    "area_solicitante": "Financeiro",
+    "esperado": "automacao -> RPA Desktop -> concluido"
+  },
+  {
+    "nome": "03_inconsistencia",
+    "descricao": "Atualize o chamado CH-123 para prioridade alta, mas os dados do cliente informados pertencem ao chamado CH-456.",
+    "categoria": "atualizacao",
+    "prioridade": "alta",
+    "area_solicitante": "Suporte",
+    "esperado": "revisao_humana -> inconsistência"
+  },
+  {
+    "nome": "04_acao_em_massa",
+    "descricao": "Fechar todos os chamados da área Financeiro.",
+    "categoria": "atualizacao",
+    "prioridade": "alta",
+    "area_solicitante": "Financeiro",
+    "esperado": "revisao_humana"
+  },
+  {
+    "nome": "05_dados_faltantes",
+    "descricao": "Atualize a prioridade do chamado.",
+    "categoria": "atualizacao",
+    "prioridade": "alta",
+    "area_solicitante": "Suporte",
+    "esperado": "revisao_humana -> dados essenciais ausentes"
+  },
+  {
+    "nome": "06_baixa_confianca",
+    "descricao": "Faça o que for necessário com este chamado.",
+    "categoria": "outro",
+    "prioridade": "baixa",
+    "area_solicitante": "Suporte",
+    "esperado": "revisao_humana -> baixa confiança"
+  },
+  {
+    "nome": "07_web_sucesso_2",
+    "descricao": "Atualize o chamado CH-456 para prioridade media.",
+    "categoria": "atualizacao",
+    "prioridade": "media",
+    "area_solicitante": "Suporte",
+    "esperado": "automacao -> RPA Web -> concluido"
+  },
+  {
+    "nome": "08_desktop_sucesso_2",
+    "descricao": "Calcule 25 + 17 na Calculadora.",
+    "categoria": "consulta",
+    "prioridade": "baixa",
+    "area_solicitante": "Financeiro",
+    "esperado": "automacao -> RPA Desktop -> concluido"
+  },
+  {
+    "nome": "09_falha_rpa_web",
+    "descricao": "Atualize o chamado CH-789 para prioridade critica.",
+    "categoria": "atualizacao",
+    "prioridade": "alta",
+    "area_solicitante": "Suporte",
+    "esperado": "automacao -> falha RPA -> falhou + revisão humana",
+    "observacao": "Para demonstrar a falha, quebrar temporariamente o seletor do botão em app/rpa/browser.py e restaurá-lo após o teste."
+  },
+  {
+    "nome": "10_consulta",
+    "descricao": "Consulte a situação do chamado CH-123.",
+    "categoria": "consulta",
+    "prioridade": "baixa",
+    "area_solicitante": "Suporte",
+    "esperado": "demonstrar tratamento de atividade fora do escopo de automação"
+  }
+]
